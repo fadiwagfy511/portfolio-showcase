@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { projects } from '@/data/projects';
 import { ProjectCard } from '@/components/ProjectCard';
 
-const categories = ['All', 'Legal SaaS', 'Beauty Tech', 'EdTech AI', 'Industrial Automation'];
+const categories = ['All', 'Legal SaaS', 'Healthcare SaaS', 'Business SaaS', 'Beauty Tech', 'EdTech AI', 'Industrial Automation', 'Marine Tech', 'Smart Parking', 'Professional Network'];
 
 const stats = [
-    { label: 'Projects Delivered', value: '12+' },
+    { label: 'Projects Delivered', value: '13+' },
     { label: 'Automation Workflows', value: '40+' },
     { label: 'Countries Served', value: '3' },
     { label: 'Languages Supported', value: '5' },

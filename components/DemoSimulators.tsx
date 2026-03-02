@@ -492,3 +492,85 @@ export function OceanMarineSimulator() {
         </div>
     );
 }
+
+// Generic Project Simulator — works for any project
+import { Project } from '@/data/projects';
+
+export function GenericSimulator({ project }: { project: Project }) {
+    const [activeTab, setActiveTab] = useState(0);
+    const layer = project.architecture[activeTab];
+
+    const features = project.architecture.flatMap(l => l.components).filter(c =>
+        !c.match(/API|SPA|Vite|Redis|MySQL|DB|u5636|\.env|Fail2Ban|SSL|TLS|CRUD|Worker|Schema|Migration/i)
+    ).slice(0, 6);
+
+    return (
+        <div className="bg-gray-900 rounded-2xl border border-gray-800 overflow-hidden">
+            {/* Header */}
+            <div className="border-b border-gray-800 px-6 py-4" style={{ background: `linear-gradient(135deg, ${project.gradientFrom}18, ${project.gradientTo}10)` }}>
+                <div className="flex items-center gap-3">
+                    <span className="text-2xl">{project.icon}</span>
+                    <div>
+                        <h3 className="text-white font-semibold">{project.name}</h3>
+                        <p className="text-xs" style={{ color: `${project.accentColor}99` }}>Interactive Preview</p>
+                    </div>
+                </div>
+            </div>
+
+            {/* KPI mini strip */}
+            <div className="grid grid-cols-2 gap-px bg-gray-800 border-b border-gray-800">
+                {project.kpis.slice(0, 2).map(kpi => (
+                    <div key={kpi.label} className="bg-gray-900 px-4 py-3 text-center">
+                        <div className="font-bold text-lg" style={{ color: project.accentColor }}>{kpi.value}</div>
+                        <div className="text-gray-400 text-xs">{kpi.label}</div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Feature browser */}
+            <div className="p-5">
+                <div className="text-xs text-gray-500 uppercase tracking-wider mb-3">Platform Capabilities</div>
+
+                {/* Tab switcher */}
+                <div className="flex gap-1 mb-4 flex-wrap">
+                    {project.architecture.map((l, i) => (
+                        <button
+                            key={l.layer}
+                            onClick={() => setActiveTab(i)}
+                            className="px-3 py-1.5 rounded-lg text-xs font-medium transition-all"
+                            style={activeTab === i
+                                ? { background: `${project.accentColor}25`, color: project.accentColor, border: `1px solid ${project.accentColor}50` }
+                                : { background: 'transparent', color: '#9ca3af', border: '1px solid #374151' }
+                            }
+                        >
+                            {l.layer}
+                        </button>
+                    ))}
+                </div>
+
+                {/* Active layer features */}
+                <div className="grid grid-cols-2 gap-2">
+                    {layer.components.filter(c =>
+                        !c.match(/API|SPA|Vite|Redis|MySQL|DB|u5636|\.env|Fail2Ban|SSL|TLS|CRUD|Worker|Schema|Migration/i)
+                    ).map(cap => (
+                        <div key={cap} className="flex items-center gap-2 bg-gray-800/60 rounded-lg px-3 py-2">
+                            <span style={{ color: project.accentColor }}>✓</span>
+                            <span className="text-gray-300 text-xs">{cap}</span>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Mini CTA */}
+            <div className="px-5 pb-5">
+                <div className="rounded-xl p-4 text-center text-sm" style={{ background: `${project.accentColor}10`, border: `1px solid ${project.accentColor}25` }}>
+                    <span className="text-gray-300">Want this for your business? </span>
+                    <a href="mailto:contact@example.com" className="font-semibold hover:underline" style={{ color: project.accentColor }}>
+                        Let's talk →
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+}
+
