@@ -186,9 +186,11 @@
     letter-spacing: 0.08em;
   }
 
-  /* Page section container */
+  /* Page section container — fluid, fills any screen */
   .section-container {
-    @apply max-w-7xl mx-auto px-6 lg:px-12;
+    width: 100%;
+    padding-left: clamp(1.25rem, 5vw, 7rem);
+    padding-right: clamp(1.25rem, 5vw, 7rem);
   }
 
   /* Corporate card */
