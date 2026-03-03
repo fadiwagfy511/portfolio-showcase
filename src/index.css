@@ -1,0 +1,204 @@
+/* ── Google Fonts ───────────────────────────────────────────── */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Cairo:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Custom Properties ──────────────────────────────────── */
+:root {
+  --navy-950: #060d1e;
+  --navy-800: #0f2044;
+  --navy-700: #0f2edb;
+  --gold-500: #c49a2d;
+  --gold-400: #d4a83a;
+  --steel-600: #475569;
+  --steel-200: #e2e8f0;
+}
+
+/* ── Base Reset ─────────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  body {
+    font-family: "Inter", "Cairo", system-ui, sans-serif;
+    background-color: #ffffff;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* RTL support */
+  [dir="rtl"] body,
+  [dir="rtl"] {
+    font-family: "Cairo", "Inter", system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Plus Jakarta Sans", "Cairo", system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4,
+  [dir="rtl"] h5,
+  [dir="rtl"] h6 {
+    font-family: "Cairo", system-ui, sans-serif;
+    letter-spacing: 0;
+  }
+}
+
+/* ── Utility Classes ─────────────────────────────────────────── */
+@layer utilities {
+  /* Text clamping */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Section number style */
+  .section-number {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold-500);
+  }
+
+  /* Corporate divider */
+  .divider-gold {
+    width: 3rem;
+    height: 2px;
+    background-color: var(--gold-500);
+  }
+
+  /* Hover underline */
+  .hover-underline {
+    position: relative;
+  }
+  .hover-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: var(--gold-500);
+    transition: width 0.3s ease;
+  }
+  .hover-underline:hover::after {
+    width: 100%;
+  }
+
+  /* Scroll reveal animation helper */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.6s ease-out,
+      transform 0.6s ease-out;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Animation delays */
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+
+  /* RTL flip utility */
+  [dir="rtl"] .rtl-flip {
+    transform: scaleX(-1);
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .animate-fade-up,
+    .animate-fade-in,
+    .animate-slide-in-r,
+    .animate-slide-in-l {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+/* ── Component Layer ─────────────────────────────────────────── */
+@layer components {
+  /* Primary button */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-8 py-3.5 bg-navy-800 text-white font-semibold text-sm tracking-wide uppercase transition-all duration-200 hover:bg-navy-950 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2;
+    letter-spacing: 0.08em;
+  }
+
+  /* Secondary outlined button */
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-8 py-3.5 border border-navy-800 text-navy-800 font-semibold text-sm tracking-wide uppercase transition-all duration-200 hover:bg-navy-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2;
+    letter-spacing: 0.08em;
+  }
+
+  /* Gold accent button */
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-8 py-3.5 bg-gold-500 text-white font-semibold text-sm tracking-wide uppercase transition-all duration-200 hover:bg-gold-600 focus:outline-none focus:ring-2 focus:ring-gold-500 focus:ring-offset-2;
+    letter-spacing: 0.08em;
+  }
+
+  /* Page section container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 lg:px-12;
+  }
+
+  /* Corporate card */
+  .corp-card {
+    @apply bg-white border border-steel-200 p-8 transition-all duration-300 hover:border-navy-800 hover:shadow-lg;
+  }
+
+  /* Tag / badge */
+  .corp-tag {
+    @apply text-xs font-semibold uppercase tracking-widest px-3 py-1 border;
+    letter-spacing: 0.1em;
+  }
+}

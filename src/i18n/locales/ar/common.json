@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "خدماتنا",
+    "projects": "مشاريعنا",
+    "contact": "تواصل معنا",
+    "getInTouch": "تواصل معنا"
+  },
+  "footer": {
+    "tagline": "نبني برمجيات تدفع نمو الأعمال حول العالم.",
+    "company": "الشركة",
+    "quickLinks": "روابط سريعة",
+    "contactUs": "تواصل معنا",
+    "rights": "جميع الحقوق محفوظة.",
+    "madeWith": "صُنع بدقة من قِبَل Elite Solution USA LLC"
+  },
+  "cta": {
+    "viewProjects": "عرض المشاريع",
+    "learnMore": "اعرف المزيد",
+    "getStarted": "ابدأ الآن",
+    "contactUs": "تواصل معنا",
+    "viewAll": "عرض جميع المشاريع",
+    "viewDetails": "عرض دراسة الحالة",
+    "backToPortfolio": "العودة إلى المحفظة",
+    "startConversation": "ابدأ محادثة"
+  },
+  "lang": {
+    "switchTo": "English",
+    "current": "AR"
+  }
+}

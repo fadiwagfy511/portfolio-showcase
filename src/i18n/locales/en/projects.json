@@ -1,0 +1,9 @@
+{
+  "hero": {
+    "label": "Our Work",
+    "title": "Project Portfolio",
+    "sub": "13+ delivered systems across industries, countries, and technology stacks."
+  },
+  "filter": { "all": "All Projects", "search": "Search projects..." },
+  "empty": "No projects match your search."
+}

@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "badge": "Elite Solution USA LLC",
+    "headline1": "Engineering Software",
+    "headline2": "That Moves Business",
+    "sub": "We design and build custom software systems, automation platforms, and AI-powered applications for enterprises across three continents.",
+    "stat1Label": "Projects Delivered",
+    "stat2Label": "Automation Workflows",
+    "stat3Label": "Countries Served",
+    "stat4Label": "Languages Supported"
+  },
+  "services": {
+    "label": "What We Do",
+    "title": "End-to-End Software Delivery",
+    "sub": "From discovery to deployment – we own the full lifecycle.",
+    "s1Title": "Custom Software Development",
+    "s1Desc": "Bespoke web platforms and SaaS products engineered to your exact specifications.",
+    "s2Title": "Workflow Automation",
+    "s2Desc": "n8n, Zapier, and custom pipelines that eliminate manual overhead and slash operating costs.",
+    "s3Title": "AI & Machine Learning",
+    "s3Desc": "Intelligent applications from NLP to computer vision, integrated into your existing stack.",
+    "s4Title": "Enterprise Integrations",
+    "s4Desc": "Connecting legacy systems, CRMs, ERPs, and third-party APIs into a unified data layer.",
+    "s5Title": "Cloud Architecture",
+    "s5Desc": "Scalable, resilient infrastructure on AWS, GCP and Azure with full DevOps automation.",
+    "s6Title": "UI/UX Engineering",
+    "s6Desc": "Interface design rooted in user psychology, built with performance-first engineering."
+  },
+  "featured": {
+    "label": "Selected Work",
+    "title": "Case Studies",
+    "sub": "Real problems. Measurable results. Enterprise-grade execution."
+  },
+  "cta": {
+    "title": "Ready to Build Something That Lasts?",
+    "sub": "Bring your requirements. We bring the architecture, the team, and the delivery track record.",
+    "btn1": "Start a Conversation",
+    "btn2": "View All Projects"
+  }
+}

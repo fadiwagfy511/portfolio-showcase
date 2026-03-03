@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact",
+    "getInTouch": "Get In Touch"
+  },
+  "footer": {
+    "tagline": "Building software that drives business growth across the globe.",
+    "company": "Company",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "rights": "All rights reserved.",
+    "madeWith": "Built with precision by Elite Solution USA LLC"
+  },
+  "cta": {
+    "viewProjects": "View Projects",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "viewAll": "View All Projects",
+    "viewDetails": "View Case Study",
+    "backToPortfolio": "Back to Portfolio",
+    "startConversation": "Start a Conversation"
+  },
+  "lang": {
+    "switchTo": "العربية",
+    "current": "EN"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "label": "Get In Touch",
+    "title": "Let's Build\nSomething Together",
+    "sub": "Tell us about your project. We respond within 24 hours."
+  },
+  "form": {
+    "name": "Full Name",
+    "email": "Email Address",
+    "company": "Company / Organization",
+    "subject": "Subject",
+    "message": "Project Description",
+    "send": "Send Message",
+    "namePh": "John Smith",
+    "emailPh": "john@company.com",
+    "companyPh": "Acme Corp",
+    "subjectPh": "What can we help you with?",
+    "messagePh": "Tell us about your project, timeline, and goals...",
+    "success": "Your message has been sent. We'll be in touch within 24 hours.",
+    "note": "For urgent inquiries, please email us directly."
+  },
+  "info": {
+    "title": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "hours": "Working Hours",
+    "hoursVal": "Mon – Fri, 9:00 AM – 6:00 PM EST"
+  },
+  "reason": {
+    "title": "Why Work With Us?",
+    "r1": "Proven track record across 13+ live systems",
+    "r2": "Transparent communication at every stage",
+    "r3": "Fixed-price or time & materials — your choice",
+    "r4": "English, Arabic, French & Spanish capability"
+  }
+}

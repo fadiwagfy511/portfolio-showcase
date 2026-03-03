@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "label": "Our Story",
+    "title": "Built by Engineers,\nDriven by Results",
+    "sub": "Elite Solution USA LLC was founded with one conviction: technology should solve real business problems, not create new ones."
+  },
+  "story": {
+    "title": "Who We Are",
+    "p1": "We are a US-based software engineering company with a global delivery team. Since our founding, we have delivered 13+ enterprise-grade systems across legal, healthcare, education, industrial, and retail sectors.",
+    "p2": "Our edge is not just technical depth — it is our obsession with understanding the client's business first. Every line of code we write is justified by a business outcome."
+  },
+  "mission": {
+    "label": "Mission",
+    "text": "To deliver software that creates measurable, lasting value for the businesses that trust us with their most critical systems."
+  },
+  "vision": {
+    "label": "Vision",
+    "text": "To be the most trusted technology partner for enterprises that refuse to settle for off-the-shelf solutions."
+  },
+  "values": {
+    "label": "Core Values",
+    "title": "What Drives Every Decision",
+    "v1Title": "Engineering Integrity",
+    "v1Desc": "We choose the right solution, not the easy one. Every architecture decision is defensible, documented, and future-proof.",
+    "v2Title": "Client Transparency",
+    "v2Desc": "No surprises. We communicate progress, blockers, and trade-offs with radical honesty at every stage.",
+    "v3Title": "Delivery Discipline",
+    "v3Desc": "Commitments are kept. Timelines are respected. Quality is non-negotiable even when deadlines are tight.",
+    "v4Title": "Continuous Mastery",
+    "v4Desc": "Technology evolves. Our team invests relentlessly in staying at the frontier so our clients don't have to."
+  },
+  "milestones": {
+    "label": "Our Journey",
+    "title": "Key Milestones",
+    "m1Year": "2020",
+    "m1Title": "Company Founded",
+    "m1Desc": "Established with a focus on custom SaaS development for the US market.",
+    "m2Year": "2021",
+    "m2Title": "First Enterprise Client",
+    "m2Desc": "Delivered a bail bond management platform that processed $2M+ in transactions in year one.",
+    "m3Year": "2022",
+    "m3Title": "Automation Division",
+    "m3Desc": "Launched dedicated workflow automation practice — now serving 5 active enterprise clients.",
+    "m4Year": "2023",
+    "m4Title": "AI Integration Practice",
+    "m4Desc": "Integrated AI into 3 client platforms, including an NCLEX exam prep engine with 10K+ AI-generated questions.",
+    "m5Year": "2024",
+    "m5Title": "Global Expansion",
+    "m5Desc": "Expanded to serve clients in the UAE, Qatar, and North Africa with multilingual platform capabilities.",
+    "m6Year": "2025",
+    "m6Title": "13+ Live Systems",
+    "m6Desc": "Operating 13+ production systems across healthcare, legal, edtech, beauty, and industrial automation."
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "label": "What We Build",
+    "title": "Services",
+    "sub": "Specialized capabilities across the full software delivery lifecycle."
+  },
+  "s1": {
+    "title": "Custom Software Development",
+    "desc": "We architect and build production-grade web applications, SaaS platforms, and internal tools from the ground up. Our process is specification-driven, ensuring every feature maps to a validated business requirement.",
+    "features": [
+      "Requirements Engineering",
+      "System Architecture Design",
+      "Full-Stack Development",
+      "API Development & Documentation",
+      "Quality Assurance & Testing",
+      "Maintenance & SLA Support"
+    ]
+  },
+  "s2": {
+    "title": "Workflow & Business Automation",
+    "desc": "We identify repetitive, error-prone manual processes and replace them with intelligent, auditable automation pipelines using n8n, custom scripts, and API orchestration.",
+    "features": [
+      "Process Mapping & Analysis",
+      "n8n Workflow Design",
+      "Automated Reporting",
+      "CRM & ERP Automation",
+      "Email/Notification Pipelines",
+      "Data Sync & ETL"
+    ]
+  },
+  "s3": {
+    "title": "AI & Machine Learning Integration",
+    "desc": "We integrate AI capabilities into existing products and build AI-native applications — from content generation engines to computer vision and NLP-powered workflows.",
+    "features": [
+      "AI Content Generation",
+      "NLP & Text Analysis",
+      "Computer Vision",
+      "Recommendation Engines",
+      "AI Chatbot Development",
+      "Model Fine-Tuning"
+    ]
+  },
+  "s4": {
+    "title": "Enterprise System Integration",
+    "desc": "We connect fragmented systems into unified, real-time data networks — eliminating silos and enabling intelligent decision-making across the organization.",
+    "features": [
+      "API Gateway Architecture",
+      "Legacy System Modernization",
+      "CRM/ERP Integration",
+      "Real-Time Data Pipelines",
+      "Webhook Orchestration",
+      "Third-Party Service Connectors"
+    ]
+  },
+  "s5": {
+    "title": "Cloud Infrastructure & DevOps",
+    "desc": "We design scalable, cost-optimized cloud infrastructure with full CI/CD automation, observability, and security hardening from day one.",
+    "features": [
+      "Cloud Architecture (AWS/GCP/Azure)",
+      "Docker & Kubernetes",
+      "CI/CD Pipeline Design",
+      "Infrastructure as Code",
+      "Monitoring & Alerting",
+      "Security Hardening"
+    ]
+  },
+  "s6": {
+    "title": "UI/UX Engineering",
+    "desc": "We design interfaces that convert — backed by UX psychology research, usability testing, and performance-first engineering.",
+    "features": [
+      "UX Research & Wireframing",
+      "Design System Creation",
+      "Responsive Web Design",
+      "Accessibility (WCAG)",
+      "Performance Optimization",
+      "Internationalization (i18n)"
+    ]
+  },
+  "process": {
+    "label": "How We Work",
+    "title": "Our Delivery Process",
+    "p1Title": "01 — Discovery",
+    "p1Desc": "We start by understanding your business in depth — not just the feature request.",
+    "p2Title": "02 — Architecture",
+    "p2Desc": "We define the system architecture, data model, and technology stack before writing a line of code.",
+    "p3Title": "03 — Build",
+    "p3Desc": "Iterative development in 2-week sprints with weekly client demos and transparent tracking.",
+    "p4Title": "04 — Quality",
+    "p4Desc": "Automated testing, manual QA, and security review before any release to production.",
+    "p5Title": "05 — Deploy",
+    "p5Desc": "Zero-downtime deployments with full monitoring and rollback capability.",
+    "p6Title": "06 — Support",
+    "p6Desc": "Ongoing SLA-backed maintenance, performance monitoring, and feature evolution."
+  },
+  "industries": {
+    "label": "Industries We Serve",
+    "i1": "Legal & Compliance",
+    "i2": "Healthcare",
+    "i3": "Education & EdTech",
+    "i4": "Industrial & Manufacturing",
+    "i5": "Marine & Logistics",
+    "i6": "Retail & Beauty Tech",
+    "i7": "Hospitality & Smart Spaces",
+    "i8": "Professional Networks"
+  }
+}
