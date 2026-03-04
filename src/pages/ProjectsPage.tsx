@@ -124,10 +124,22 @@ export default function ProjectsPage() {
                     {/* Top */}
                     <div className="flex items-start justify-between mb-6">
                       <div
-                        className="w-12 h-12 flex items-center justify-center text-xl border border-steel-200 group-hover:border-white/20 transition-colors"
-                        style={{ background: `${project.accentColor}15` }}
+                        className="w-12 h-12 flex items-center justify-center border border-steel-200 group-hover:border-white/20 transition-colors overflow-hidden"
+                        style={{
+                          background: project.logo
+                            ? "#ffffff"
+                            : `${project.accentColor}15`,
+                        }}
                       >
-                        {project.icon}
+                        {project.logo ? (
+                          <img
+                            src={project.logo}
+                            alt={project.name}
+                            className="w-full h-full object-contain p-1"
+                          />
+                        ) : (
+                          <span className="text-xl">{project.icon}</span>
+                        )}
                       </div>
                       <div className="flex items-center gap-1.5">
                         <div

@@ -168,10 +168,22 @@ export default function HomePage() {
               >
                 <div className="flex items-start justify-between mb-6">
                   <div
-                    className="w-14 h-14 flex items-center justify-center text-2xl border border-steel-200 group-hover:border-navy-800 transition-colors"
-                    style={{ background: `${project.accentColor}12` }}
+                    className="w-14 h-14 flex items-center justify-center border border-steel-200 group-hover:border-navy-800 transition-colors overflow-hidden"
+                    style={{
+                      background: project.logo
+                        ? "#ffffff"
+                        : `${project.accentColor}12`,
+                    }}
                   >
-                    {project.icon}
+                    {project.logo ? (
+                      <img
+                        src={project.logo}
+                        alt={project.name}
+                        className="w-full h-full object-contain p-1"
+                      />
+                    ) : (
+                      <span className="text-2xl">{project.icon}</span>
+                    )}
                   </div>
                   <span className="text-xs font-semibold uppercase tracking-[0.15em] text-steel-400 border border-steel-200 px-3 py-1 group-hover:border-navy-800 group-hover:text-navy-800 transition-all">
                     {project.category}

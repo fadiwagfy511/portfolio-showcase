@@ -91,16 +91,28 @@ export function ProjectDetailLayout({
               )}
             </div>
 
-            {/* Icon block */}
+            {/* Logo / Icon block */}
             <div className="lg:col-span-4 flex justify-start lg:justify-end">
               <div
-                className="w-24 h-24 lg:w-28 lg:h-28 flex items-center justify-center text-5xl border-2"
+                className="w-32 h-32 lg:w-36 lg:h-36 flex items-center justify-center border-2 overflow-hidden"
                 style={{
-                  borderColor: `${project.accentColor}60`,
-                  background: `${project.accentColor}10`,
+                  borderColor: project.logo
+                    ? `${project.accentColor}60`
+                    : `${project.accentColor}60`,
+                  background: project.logo
+                    ? "#ffffff"
+                    : `${project.accentColor}10`,
                 }}
               >
-                {project.icon}
+                {project.logo ? (
+                  <img
+                    src={project.logo}
+                    alt={project.name}
+                    className="w-full h-full object-contain p-3"
+                  />
+                ) : (
+                  <span className="text-5xl">{project.icon}</span>
+                )}
               </div>
             </div>
           </div>
