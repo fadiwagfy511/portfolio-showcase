@@ -29,122 +29,115 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="relative min-h-screen bg-navy-800 flex flex-col justify-center overflow-hidden">
-        {/* Subtle grid pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)",
-            backgroundSize: "80px 80px",
-          }}
-        />
-        {/* Gold accent line — top */}
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-gold-500" />
+      {/* ── HERO + FRANCHISE BAR — fills exactly one viewport ────── */}
+      <div className="min-h-screen flex flex-col">
+        {/* ── HERO ─────────────────────────────────────────────────── */}
+        <section className="relative flex-1 bg-navy-800 flex flex-col justify-center overflow-hidden">
+          {/* Subtle grid pattern */}
+          <div
+            className="absolute inset-0 opacity-[0.04]"
+            style={{
+              backgroundImage:
+                "linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px)",
+              backgroundSize: "80px 80px",
+            }}
+          />
+          {/* Gold accent line — top */}
+          <div className="absolute top-0 left-0 right-0 h-0.5 bg-gold-500" />
 
-        <div className="section-container relative z-10 py-32 pt-40">
-          {/* Badge */}
-          <div className="animate-fade-in mb-10 inline-flex items-center gap-3">
-            <div className="h-px w-10 bg-gold-500" />
-            <span className="text-gold-500 text-xs font-bold uppercase tracking-[0.3em]">
-              {t("home:hero.badge")}
-            </span>
-          </div>
-
-          {/* Headline */}
-          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-black leading-tight mb-8 animate-fade-up delay-100">
-            <span className="text-white">{t("home:hero.headline1")}</span>{" "}
-            <span className="text-gold-500">{t("home:hero.headline2")}</span>
-          </h1>
-
-          {/* Sub */}
-          <p className="text-steel-300 text-lg md:text-xl max-w-xl leading-relaxed mb-12 animate-fade-up delay-200">
-            {t("home:hero.sub")}
-          </p>
-
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-4 mb-20 animate-fade-up delay-300">
-            <Link to="/projects" className="btn-gold">
-              {t("common:cta.viewProjects")}
-              <span className="rtl-flip">→</span>
-            </Link>
-            <Link
-              to="/contact"
-              className="btn-outline border-white/20 text-white hover:bg-white hover:text-navy-800"
-            >
-              {t("common:cta.contactUs")}
-            </Link>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border-t border-white/10 animate-fade-up delay-400">
-            {STATS.map((s) => (
-              <div
-                key={s.labelKey}
-                className="bg-navy-800 px-6 py-6 first:pl-0"
-              >
-                <div className="text-4xl font-black font-display text-white">
-                  {s.value}
-                </div>
-                <div className="text-xs text-steel-400 uppercase tracking-wider mt-1">
-                  {t(`home:hero.${s.labelKey}`)}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in delay-500">
-          <div className="w-px h-12 bg-white/20 relative overflow-hidden">
-            <div
-              className="absolute top-0 w-full bg-gold-500 animate-bounce"
-              style={{ height: "40%" }}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* ── FRANCHISE TRUST BAR ──────────────────────────────────── */}
-      <div className="bg-navy-950 border-b border-white/5">
-        <div className="section-container py-3">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
-              {/* Verified badge + label */}
-              <div className="flex items-center gap-2.5">
-                <div className="flex items-center justify-center w-5 h-5 rounded-full bg-gold-500/20 border border-gold-500/40 flex-shrink-0">
-                  <svg
-                    className="w-3 h-3 text-gold-500"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2.5}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <span className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-gold-500">
-                  Official SaasBizHub Franchise
-                </span>
-              </div>
-              {/* Divider */}
-              <div className="hidden sm:block h-3 w-px bg-white/10" />
-              <span className="hidden sm:block text-[0.65rem] text-steel-500 tracking-wide">
-                Headquartered in California, USA
+          <div className="section-container relative z-10 pt-32 pb-0">
+            {/* Badge */}
+            <div className="animate-fade-in mb-6 inline-flex items-center gap-3">
+              <div className="h-px w-10 bg-gold-500" />
+              <span className="text-gold-500 text-xs font-bold uppercase tracking-[0.3em]">
+                {t("home:hero.badge")}
               </span>
             </div>
-            <span className="text-[0.6rem] text-steel-600 tracking-wide hidden md:block">
-              Backed by a global software operations network
-            </span>
-          </div>
-        </div>
-      </div>
 
+            {/* Headline */}
+            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] font-black leading-tight mb-5 animate-fade-up delay-100">
+              <span className="text-white">{t("home:hero.headline1")}</span>{" "}
+              <span className="text-gold-500">{t("home:hero.headline2")}</span>
+            </h1>
+
+            {/* Sub */}
+            <p className="text-steel-300 text-lg md:text-xl max-w-xl leading-relaxed mb-8 animate-fade-up delay-200">
+              {t("home:hero.sub")}
+            </p>
+
+            {/* CTAs */}
+            <div className="flex flex-wrap gap-4 mb-10 animate-fade-up delay-300">
+              <Link to="/projects" className="btn-gold">
+                {t("common:cta.viewProjects")}
+                <span className="rtl-flip">→</span>
+              </Link>
+              <Link
+                to="/contact"
+                className="btn-outline border-white/20 text-white hover:bg-white hover:text-navy-800"
+              >
+                {t("common:cta.contactUs")}
+              </Link>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border-t border-white/10 animate-fade-up delay-400">
+              {STATS.map((s) => (
+                <div
+                  key={s.labelKey}
+                  className="bg-navy-800 px-6 py-6 first:pl-0"
+                >
+                  <div className="text-4xl font-black font-display text-white">
+                    {s.value}
+                  </div>
+                  <div className="text-xs text-steel-400 uppercase tracking-wider mt-1">
+                    {t(`home:hero.${s.labelKey}`)}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        {/* ── FRANCHISE TRUST BAR ──────────────────────────────────── */}
+        <div className="bg-navy-950 border-b border-white/5">
+          <div className="section-container py-3">
+            <div className="flex flex-wrap items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                {/* Verified badge + label */}
+                <div className="flex items-center gap-2.5">
+                  <div className="flex items-center justify-center w-5 h-5 rounded-full bg-gold-500/20 border border-gold-500/40 flex-shrink-0">
+                    <svg
+                      className="w-3 h-3 text-gold-500"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2.5}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-gold-500">
+                    Official SaasBizHub Franchise
+                  </span>
+                </div>
+                {/* Divider */}
+                <div className="hidden sm:block h-3 w-px bg-white/10" />
+                <span className="hidden sm:block text-[0.65rem] text-steel-500 tracking-wide">
+                  Headquartered in California, USA
+                </span>
+              </div>
+              <span className="text-[0.6rem] text-steel-600 tracking-wide hidden md:block">
+                Backed by a global software operations network
+              </span>
+            </div>
+          </div>
+        </div>{" "}
+        {/* end franchise bar */}
+      </div>{" "}
+      {/* end min-h-screen wrapper */}
       {/* ── SERVICES OVERVIEW ─────────────────────────────────────── */}
       <section className="py-24 bg-white">
         <div className="section-container">
@@ -185,7 +178,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── FEATURED PROJECTS ──────────────────────────────────────── */}
       <section className="py-24 bg-steel-100">
         <div className="section-container">
@@ -280,7 +272,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* ── CTA BANNER ─────────────────────────────────────────────── */}
       <section className="bg-navy-800 border-t-2 border-gold-500">
         <div ref={ctaRef} className="reveal section-container py-24 lg:py-32">

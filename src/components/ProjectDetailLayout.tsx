@@ -332,10 +332,7 @@ export function ProjectDetailLayout({
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 lg:justify-end">
-              <a
-                href="mailto:contact@elitesolutionusa.com"
-                className="btn-gold"
-              >
+              <a href="mailto:agency@saasbizhub.com" className="btn-gold">
                 Let's Talk <span className="rtl-flip">→</span>
               </a>
               <Link

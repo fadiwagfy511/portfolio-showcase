@@ -74,10 +74,10 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <span className="text-gold-500 mt-0.5">@</span>
                 <a
-                  href="mailto:contact@elitesolutionusa.com"
+                  href="mailto:agency@saasbizhub.com"
                   className="hover:text-white transition-colors"
                 >
-                  contact@elitesolutionusa.com
+                  agency@saasbizhub.com
                 </a>
               </li>
               <li className="flex items-start gap-3">

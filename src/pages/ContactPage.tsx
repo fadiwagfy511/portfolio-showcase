@@ -28,7 +28,7 @@ export default function ContactPage() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nCompany: ${form.company}\nEmail: ${form.email}\n\n${form.message}`,
     );
-    window.location.href = `mailto:contact@elitesolutionusa.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:agency@saasbizhub.com?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
@@ -180,8 +180,8 @@ export default function ContactPage() {
                     {
                       icon: "@",
                       label: t("contact:info.email"),
-                      value: "contact@elitesolutionusa.com",
-                      href: "mailto:contact@elitesolutionusa.com",
+                      value: "agency@saasbizhub.com",
+                      href: "mailto:agency@saasbizhub.com",
                     },
                     {
                       icon: "◎",
